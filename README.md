@@ -11,6 +11,21 @@
 
 ---
 
+## 📸 Screenshots
+
+### Landing — Two production-style apps. One opinionated portfolio.
+![Landing](docs/screenshots/01-landing.png)
+
+### Sentinel-Ops — IT-Ops control room
+Live KPI strip, CPU + memory area chart, error-rate & p95 line charts, services health grid, anomaly feed (with severity), and an embedded multi-LLM AI assistant.
+![Sentinel-Ops](docs/screenshots/02-sentinel-ops.png)
+
+### RootCause-AI — Production incident debugger
+Paste a stack trace → strict-JSON RCA card with severity, confidence %, probable cause, suggested fix, affected components, runbook references, and a copyable code patch. History persisted.
+![RootCause-AI](docs/screenshots/03-rootcause-ai.png)
+
+---
+
 ## Why this repo exists
 
 This is a portfolio submission for a **Full-Stack / AI-Engineer** role whose
