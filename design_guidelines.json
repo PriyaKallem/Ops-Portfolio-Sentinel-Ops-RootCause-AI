@@ -1,0 +1,123 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 4 (Swiss & High-Contrast) - Dark Mode Variant",
+  "mood": "Authoritative, razor-sharp, technically profound, reliable, 'Control Room' vibe",
+  "colors": {
+    "background": {
+      "page": "#050505",
+      "surface": "#121212",
+      "surface_hover": "#1A1A1A",
+      "glass": "rgba(5, 5, 5, 0.7)"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A0A0A0",
+      "tertiary": "#666666",
+      "inverse": "#000000"
+    },
+    "border": {
+      "default": "#222222",
+      "focus": "#00E5FF",
+      "light": "rgba(255, 255, 255, 0.08)"
+    },
+    "accents": {
+      "primary": "#00E5FF",
+      "primary_hover": "#00B3CC",
+      "critical": "#FF3366",
+      "warning": "#FFBB00",
+      "success": "#00CC66"
+    }
+  },
+  "typography": {
+    "headings": {
+      "family": "Chivo, sans-serif",
+      "weight": "800",
+      "tracking": "tracking-tight",
+      "usage": "H1, H2, Dashboard widget titles. (DO NOT use Inter, Roboto, Open Sans)"
+    },
+    "body": {
+      "family": "'IBM Plex Sans', sans-serif",
+      "weight": "400",
+      "leading": "leading-relaxed"
+    },
+    "mono": {
+      "family": "'JetBrains Mono', monospace",
+      "weight": "400",
+      "usage": "Logs, code snippets, metrics, data points"
+    },
+    "hierarchy": {
+      "h1": "text-4xl md:text-5xl lg:text-6xl+",
+      "h2": "text-3xl sm:text-4xl",
+      "h3": "text-xl sm:text-2xl",
+      "subtitle": "text-xl sm:text-2xl (Must not be more than 2 steps smaller than heading)",
+      "widget_title": "text-xs md:text-sm uppercase tracking-[0.2em] font-bold text-[#A0A0A0]",
+      "body": "text-sm sm:text-base",
+      "metric": "text-3xl md:text-5xl font-mono tracking-tighter text-white font-bold"
+    }
+  },
+  "layout_and_spacing": {
+    "portfolio_landing": {
+      "grid": "MODE A: 'TETRIS' Grid (Asymmetric, wide gaps). Ensure not fully filled to leave negative space.",
+      "gap": "gap-8 lg:gap-12",
+      "padding": "py-24 md:py-32 px-6 md:px-12",
+      "container": "max-w-7xl mx-auto"
+    },
+    "dashboards": {
+      "grid": "MODE B: 'CONTROL ROOM' Grid (High density, pure utility, gap-4 md:gap-6).",
+      "gap": "gap-4 md:gap-6",
+      "padding": "p-6",
+      "structure": "Grid Borders: container uses border-collapse layout, items have subtle 1px right/bottom borders in #222222."
+    },
+    "surfaces": {
+      "cards": "Flat solid #121212, 1px solid #222222 border, max rounded-md, no soft shadows.",
+      "header": "Crystal Glassmorphism: backdrop-blur-xl bg-[#050505]/70, 1px bottom border-white/10. MUST be z-50.",
+      "inputs": "Neumorphism/Tactile strict variant. Deep #0A0A0A background, 1px #333 border, focus ring 2px #00E5FF."
+    }
+  },
+  "components_strategy": {
+    "navigation": "Sticky top bar, z-50. Must include Logo, cross-project links (Sentinel-Ops, RootCause-AI), and primary CTA.",
+    "buttons": "Sharp corners (rounded-sm). Primary: bg-[#00E5FF] text-black font-bold. Critical: bg-[#FF3366] text-white. Secondary: bg-transparent border border-[#222222] text-white.",
+    "charts": "Recharts library. Dark mode tooltips (bg-[#121212] border-[#222222]). Line/Bar colors mapped to Brand Accents.",
+    "log_viewer": "Terminal/Retro-Futurism vibe. Deep #000000 bg, JetBrains Mono font, colorful syntax highlighting (cyan, red, green).",
+    "chat_panel": "Right-aligned fixed panel or Shadcn Sheet. Minimalist, high-density chat bubbles. Dropdown for Model Picker.",
+    "rca_output_card": "Grid Border style with high contrast. Use red/yellow badges for Severity. Clearly separate 'Probable Cause' and 'Suggested Fix'."
+  },
+  "motion_and_interaction": {
+    "hover_states": "Interactive elements shift background to #1A1A1A, text to #FFFFFF. Add '-translate-y-1' to cards.",
+    "transitions": "transition-all duration-200 ease-in-out.",
+    "accessibility": "Focus states mandatory: focus:ring-2 focus:ring-[#00E5FF]. Use proper aria-labels.",
+    "data_testid": "ALL interactive/key elements MUST have data-testid attributes (e.g., 'nav-sentinel-link', 'analyze-logs-button')."
+  },
+  "icons_and_assets": {
+    "icon_library": "@phosphor-icons/react (Duotone or Regular) or lucide-react (default). Keep lines sharp and technical.",
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://images.pexels.com/photos/18545023/pexels-photo-18545023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1024&w=1536",
+        "description": "Dynamic red neon lights and geometric patterns. Use as the hero section background on the landing page with heavy bg-black/70 overlay to ensure text contrast."
+      },
+      {
+        "category": "rootcause_background",
+        "url": "https://images.pexels.com/photos/8134609/pexels-photo-8134609.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1024&w=1536",
+        "description": "Cyberpunk digital numbers. Use as a subtle atmospheric background layer for RootCause-AI or the portfolio's tech stack section."
+      },
+      {
+        "category": "builder_avatar",
+        "url": "https://images.unsplash.com/photo-1769636929231-3cd7f853d038?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0JTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzc3MDUzNzc3fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Professional headshot for the 'About' section."
+      }
+    ],
+    "logos": "Do NOT use placeholder images for tech stack/logos. Use typography-based tags in JetBrains Mono with 1px borders (e.g., [ React ] [ Python ])."
+  },
+  "instructions_to_main_agent": [
+    "1. Read this file carefully and strictly adhere to the 'Swiss & High-Contrast' dark theme.",
+    "2. Install required fonts (Chivo, IBM Plex Sans, JetBrains Mono) from Google Fonts in index.html or global css.",
+    "3. Use pure Tailwind CSS for structural grid layouts (avoid using Shadcn layout cards if they break the grid asymmetry).",
+    "4. Create 3 distinct views/routes: Portfolio Landing (/), Sentinel-Ops (/sentinel), and RootCause-AI (/rootcause).",
+    "5. Use Recharts for Sentinel-Ops live telemetry. Mock the data with intervals so charts appear alive.",
+    "6. RootCause-AI must have a massive, visually imposing text area for dumping stack traces, followed by an analytical Grid Border response card.",
+    "7. Implement all interactive states explicitly (hover, focus, active).",
+    "8. Ensure all data-testids are implemented.",
+    "9. Include a multi-model selector (Claude 4.5, GPT-5.2, Gemini 3 Pro) in both AI apps."
+  ]
+}
