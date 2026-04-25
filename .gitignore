@@ -83,5 +83,10 @@ agenthub/agents/youtube/db
 
 memory/test_credentials.md
 
+# Emergent platform internals
+.emergent/
+test_reports/
+test_result.md
+
 # Mobile development
 android-sdk/
